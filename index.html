@@ -2,14 +2,35 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/main.css">
 	<title>Pixel Studio</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
+	<div id="palette">
+		<ul id="tools">
+			<li>
+				<i class="fa fa-pencil fa-1x"></i>
+			</li>
+			<li>
+				<i class="fa fa-eraser fa-1x"></i>
+			</li>
+		</ul>
+		<hr>
+		<ul id="colors">
+			<li>
+			</li>
+		</ul>
+	</div>
 	<script src="js/jquery.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/palette.js"></script>
+	<script src="js/pixelstudio.js"></script>
 	<script src="js/tool.class.js"></script>
 	<script src="js/color.class.js"></script>
+	<script src="js/palette.js"></script>
+	<script>
+		$(function(){
+			pixel_studio.init();
+		});
+	</script>
 </body>
 </html>

@@ -1,3 +1,32 @@
+*{
+	margin: 0;
+}
 body{
 	overflow: hidden;
+}
+ul{
+	list-style-type: none;
+	margin-top: 5px;
+}
+li{
+	display: block;
+}
+hr{
+	width: 10px;
+	margin-left: 45px;
+}
+#palette{
+	background-color: whitesmoke;
+	width: 60px;
+}
+#tools li{
+	background-color: #ddd;
+}
+#colors li{
+	background-color: red;
+	padding: 8px;
+	margin: 2px;
+}
+#tools li:hover, #colors li:hover{
+	border: 1px solid #ff0;
 }
