@@ -8,9 +8,10 @@ var pixel_studio = {
 			new Color('green',[56,187,136]),
 			new Color('purple',[135,35,111]),
 			new Color('sand',[220,194,140]),
-			new Color('lilas',[151,146,197])
+			new Color('lilas',[151,146,197]),
+			new Color('bleu marine',[3,34,76]),
+			new Color('fuschia',[253, 63, 146])
 		];
-		/*console.log(colors);*/
 		this.palette.init_colors(colors);
 
 		console.log("Pixel studio is ready");
