@@ -21,7 +21,7 @@ div{
 	padding: 10px;
 }
 .selected{
-	border: 1px solid #ff0;
+	border: 2px solid #ff0;
 }
 .fa{
 	margin-left: 1px;
@@ -41,5 +41,5 @@ div{
 	width: 4px;
 }
 #tools li:hover, #colors li:hover{
-	border: 1px solid #ff0;
+	border: 2px solid #ff0;
 }

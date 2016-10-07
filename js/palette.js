@@ -25,6 +25,14 @@ pixel_studio.palette = {
 		}
 		// couleur par défaut
 		this.select_color(this.colors[0]);
-		console.log("palette is ready");
+
+		// gestion des clicks
+		var self = this;
+
+		$('#colors').on('click','li', function(){
+
+			let index = $( "#colors li").index(this);
+			self.select_color(self.colors[index]);
+		})
 	}
 };
