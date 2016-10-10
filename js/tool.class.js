@@ -4,9 +4,8 @@ class Tool{
 	 * @param  {string} name  Nom de l'outil
 	 * @param  {string} icone  Icône de l'outil
 	 */
-	constructor(name, icone){
+	constructor(name, icones){
 		this.name = name;
-		this.icone = icone;
-
-	}	
+		this.icones = icones;
+	}
 }

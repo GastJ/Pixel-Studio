@@ -1,4 +1,4 @@
-pixel_studio.palette = {
+pixel_studio.palette_color = {
 
 	colors: [],
 	color_selected: null,
@@ -8,17 +8,19 @@ pixel_studio.palette = {
 		$('#colors li').removeClass('selected').eq(color.id).addClass('selected');
 	},
 
-	init_colors: function(colors){
+	init: function(colors){
 
 		this.colors = colors;
+
+		// création de la représentation de la palette couleur
 
 		let $colors = $('#colors'),
 			$one = $("#colors li").detach();
 
 		for(var i=0; i<colors.length; i++){
 			let $c = $one.clone();
-				  color = this.colors[i];
-				  color.id = i;
+				color = this.colors[i];
+				color.id = i;
 			$c.css("background-color",colors[i].to_string());
 			$c.attr('title', colors[i].name)
 			$("#colors").append($c);

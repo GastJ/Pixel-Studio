@@ -2,7 +2,7 @@ var pixel_studio = {
 
 	init: function(){
 
-		//couleurs de la palette
+		// Couleurs de la palette
 		
 		let colors = [
 			new Color('green',[56,187,136]),
@@ -12,8 +12,15 @@ var pixel_studio = {
 			new Color('bleu marine',[3,34,76]),
 			new Color('fuschia',[253, 63, 146])
 		];
-		this.palette.init_colors(colors);
+		this.palette_color.init(colors);
 
+		// Outils de dessin
+		
+		let tools =[
+			new Tool('crayon',"fa-pencil"),
+			new Tool('gomme',"fa-eraser")
+		];
+		this.palette_tool.init(tools);
 		console.log("Pixel studio is ready");
 	}
 };
