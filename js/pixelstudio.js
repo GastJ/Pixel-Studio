@@ -24,7 +24,7 @@ var pixel_studio = {
 
 		// canvas
 		
-		this.canvas.init('zone_dessin', window.innerWidth, window.innerHeight/2, 100);
+		this.canvas.init('zone_dessin', window.innerWidth, window.innerHeight/1.5, 100);
 		console.log("Pixel studio is ready");
 	}
 };

@@ -11,6 +11,15 @@ pixel_studio.canvas = {
 	},
 
 	pixel_dimension: 0,
+
+	draw: function(x,y,Color){
+
+		let px = (x-1) * this.pixel_dimension,
+			py = (y-1) * this.pixel_dimension;
+
+		this.context.fillStyle = Color.to_string();
+		this.context.fillRect(px, py, this.pixel_dimension, this.pixel_dimension);
+	},
 	/**
 	 * Préparation de la zone de dessin
 	 * @param  {string} div_id 		   Nom de la div dans laquelle sera placé le canvas
@@ -39,6 +48,5 @@ pixel_studio.canvas = {
 		this.$c = $canvas;
 		this.$c.appendTo('#'+div_id);
 		this.context = $canvas[0].getContext('2d');
-
 	}
 };
