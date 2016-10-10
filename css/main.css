@@ -24,6 +24,9 @@ div{
 	border: 1px solid #000;
 	background-color: #fff;
 }
+#zone_dessin canvas:hover{
+	cursor: crosshair;
+}
 .selected{
 	border: 2px solid #ff0;
 }

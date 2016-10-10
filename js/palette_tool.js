@@ -1,10 +1,14 @@
 pixel_studio.palette_tool = {
 
 	tools: [],
-	tool_selected: null,
+	selected: null,
+
+	get_selected: function(){
+		return this.selected;
+	},
 
 	select_tool: function(tool){
-		this.tool_selected = tool;
+		this.selected = tool;
 		$('#tools li').removeClass('selected').eq(tool.id).addClass('selected');
 	},
 
