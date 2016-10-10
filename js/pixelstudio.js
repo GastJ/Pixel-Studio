@@ -21,6 +21,10 @@ var pixel_studio = {
 			new Tool('gomme',"fa-eraser")
 		];
 		this.palette_tool.init(tools);
+
+		// canvas
+		
+		this.canvas.init('zone_dessin', window.innerWidth, window.innerHeight/2, 100);
 		console.log("Pixel studio is ready");
 	}
 };

@@ -22,7 +22,7 @@ pixel_studio.palette_tool = {
 				tool = this.tools[j];
 				tool.id = j;
 			$t.addClass(tools[j].icones);
-			$t.attr('title', tools[j].name)
+			$t.attr('title', tools[j].name);
 			$("#tools").append($t);
 		}
 		// outil par défaut
