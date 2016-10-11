@@ -2,7 +2,6 @@ pixel_studio.palette_color = {
 
 	colors: [],
 	selected: null,
-	bg_color: null,
 
 	get_selected: function(){
 		return this.selected;
@@ -17,8 +16,6 @@ pixel_studio.palette_color = {
 	init: function(colors){
 
 		this.colors = colors;
-
-		this.bg_color = new Color('white',[255,255,255]);
 
 		// création de la représentation de la palette couleur
 

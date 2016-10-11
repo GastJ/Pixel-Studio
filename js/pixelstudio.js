@@ -10,15 +10,17 @@ var pixel_studio = {
 			new Color('sand',[220,194,140]),
 			new Color('lilas',[151,146,197]),
 			new Color('bleu marine',[3,34,76]),
-			new Color('fuschia',[253, 63, 146])
+			new Color('fuschia',[253, 63, 146]),
+			new Color('black',[0,0,0]),
+			new Color('citron',[247,255,60])
 		];
 		this.palette_color.init(colors);
 
 		// Outils de dessin
 		
 		let tools =[
-			new Tool('crayon',"fa-pencil"),
-			new Tool('gomme',"fa-eraser")
+			new Pencil(this.canvas),
+			new Eraser(this.canvas)
 		];
 		this.palette_tool.init(tools);
 
